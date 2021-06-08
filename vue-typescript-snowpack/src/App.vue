@@ -15,12 +15,14 @@
       <a class="App-link" href="https://vuejs.org" target="_blank" rel="noopener noreferrer">{{
         state.message
       }}</a>
+      <SubComponent />
     </header>
   </div>
 </template>
 
 <script lang="ts">
 import {defineComponent, reactive} from 'vue';
+import SubComponent from '@/SubComponent.vue'; // alias test
 
 interface State {
   message: string;
@@ -35,6 +37,9 @@ export default defineComponent({
       state,
     };
   },
+  components: {
+    SubComponent,
+  }
 });
 </script>
 
