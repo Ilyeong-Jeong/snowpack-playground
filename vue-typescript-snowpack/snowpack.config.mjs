@@ -15,6 +15,10 @@ export default {
   alias: {
     '@': './src',
   },
+  // 별도로 구성된 base config를 병합. 상대 파일 경로, npm 패키지 또는 npm 패키지 내의 파일일 수 있음
+  extends: '',
+  // 빌드에서 제외할 파일 
+  exclude: [], // string[]
   routes: [
     /* Enable an SPA Fallback in development: */
     // {"match": "routes", "src": ".*", "dest": "/index.html"},
@@ -28,7 +32,9 @@ export default {
   },
   // snowpack dev server option
   devOptions: {
-    port: 3000,
+    port: 3000, // default: 8080
+    hmr: true, // hot module replacement toggle default: true
+    hmrDelay: 0, // hmr delay(milliseconds) default: 0
     /* ... */
   },
   buildOptions: {
