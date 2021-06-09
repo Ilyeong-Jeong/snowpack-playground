@@ -2,7 +2,6 @@
 snowpack에서 제공하는 @snowpack/app-template-react-typescript을 사용.
 ```
 npx create-snowpack-app <디렉토리명> --template @snowpack/app-template-react-typescript
-
 ```
 
 ## Available Scripts
