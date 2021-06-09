@@ -1,7 +1,7 @@
 # vue-typescript-snowpack
 snowpack에서 제공하는 @snowpack/app-template-vue-typescript을 사용.
 ```
-npx create-snowpack-app <디렉토리명> --template <Official Snowpack App Templates> [--use-yarn | --use-pnpm | --no-install | --no-git]
+npx create-snowpack-app <디렉토리명> --template @snowpack/app-template-vue-typescript
 
 ```
 
@@ -11,7 +11,8 @@ npx create-snowpack-app <디렉토리명> --template <Official Snowpack App Temp
 ```
 npm start
 ```
-Open http://localhost:3000
+Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
+
 Vue (HMR only): A few lines of code(index.js)
 
 ### npm test
