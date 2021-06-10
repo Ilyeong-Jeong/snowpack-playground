@@ -27,9 +27,6 @@ export default {
     /* Example: Bundle your final build: */
     // "bundle": true,
   },
-  packageOptions: {
-    /* ... */
-  },
   // snowpack dev server option
   devOptions: {
     port: 3000, // default: 8080
@@ -37,7 +34,16 @@ export default {
     hmrDelay: 0, // hmr delay(milliseconds) default: 0
     /* ... */
   },
+  // build config
   buildOptions: {
+    out: 'build', // 최종 빌드를 출력하는 디렉토리 이름 default: 'build' 
+    /* ... */
+  },
+  // test config
+  testOptions: {
+    /* ... */
+  },
+  packageOptions: {
     /* ... */
   },
 };
